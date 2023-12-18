@@ -60,7 +60,7 @@ return {
               return
             end
 
-            vim.lsp.buf.format {
+            require('plf').format {
               async = false,
               filter = function(c)
                 return c.id == client.id
