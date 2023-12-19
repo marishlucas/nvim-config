@@ -1,7 +1,5 @@
 # kickstart-modular.nvim
 
-https://github.com/assets/1813121/f3ff9a2b-c31f-44df-a4fa-8a0d7b17cf7b
-
 ### Introduction
 
 *This is a fork of [kdheepak/kickstart.nvim/](https://github.com/kdheepak/kickstart.nvim/).
