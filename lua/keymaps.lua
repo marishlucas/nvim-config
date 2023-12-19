@@ -11,19 +11,18 @@ vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = tr
 -- Diagnostic keymaps
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous diagnostic message' })
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next diagnostic message' })
-vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Open floating diagnostic message' })
-vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostics list' })
+-- vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Open floating diagnostic message' })
+-- vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostics list' })
 
 
 -- Plugins keymaps
-vim.keymap.set('n', '<leader>u', vim.cmd.UndotreeToggle)
-vim.keymap.set('n', '<leader>e', function() vim.cmd.Neotree("toggle") end)
-vim.keymap.set('n', '<leader>g', vim.cmd.LazyGit)
+vim.keymap.set('n', '<leader>u', vim.cmd.UndotreeToggle, { desc = "Open UndoGit" })
+vim.keymap.set('n', '<leader>e', function() vim.cmd.Neotree("toggle") end, { desc = "Open Filetree" })
+vim.keymap.set('n', '<leader>g', vim.cmd.LazyGit, { desc = "Open LazyGit" })
 
 
 
 -- Custom keymaps
-
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
