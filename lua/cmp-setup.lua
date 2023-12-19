@@ -50,10 +50,19 @@ cmp.setup {
     end, { 'i', 's' }),
   },
   sources = {
+    { name = "codeium" },
     { name = 'nvim_lsp' },
     { name = 'luasnip' },
     { name = 'path' },
   },
+  formatting = {
+    format = require('lspkind').cmp_format({
+      mode = "symbol",
+      maxwidth = 50,
+      ellipsis_char = '...',
+      symbol_map = { Codeium = "", }
+    })
+  }
 }
 
 -- vim: ts=2 sts=2 sw=2 et
