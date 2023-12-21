@@ -1,7 +1,17 @@
 return {
 	"folke/flash.nvim",
 	event = "VeryLazy",
-	---@rype Flash.Config
-	opts = {},
+	---@type Flash.Config
+	opts = {
+		modes = {
+			char = {
+				enabled = false
+			}
+		},
+		rainbow = {
+			enabled = true,
+			shade = 5
+		}
+	},
 	-- stylua: ignore
 }
