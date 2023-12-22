@@ -57,15 +57,15 @@ vim.defer_fn(function()
           ['[]'] = '@class.outer',
         },
       },
-      swap = {
-        enable = true,
-        swap_next = {
-          ['<leader>a'] = '@parameter.inner',
-        },
-        swap_previous = {
-          ['<leader>A'] = '@parameter.inner',
-        },
-      },
+      -- swap = {
+      --   enable = true,
+      --   swap_next = {
+      --     ['<C-a>'] = '@parameter.inner',
+      --   },
+      --   swap_previous = {
+      --     ['<C-A>'] = '@parameter.inner',
+      --   },
+      -- },
     },
   }
 end, 0)
