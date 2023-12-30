@@ -5,4 +5,5 @@
 return {
 	"windwp/nvim-ts-autotag",
 	"/onsails/lspkind.nvim",
+	'eandrju/cellular-automaton.nvim'
 }
